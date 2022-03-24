@@ -1,0 +1,43 @@
+header {
+    font-family: 'Roboto', sans-serif;
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(168, 202, 186, 0.507) 0%, rgba(87, 76, 84, 0.712) 100%), url(/img/colegio-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+.titulo {
+    color: rgb(245, 240, 240);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 180px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    /* bordes */
+}
+
+.subtitulo-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    text-align: center;
+    margin-top: 0px;
+    -webkit-text-stroke: 1px rgb(148, 13, 13);
+}
+
+.contenedor-comunidad {
+    margin-top: 30px;
+}
+
+.subtitulo-comunidad {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.parrafo-comunidad {
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+}
