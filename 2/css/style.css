@@ -1,0 +1,169 @@
+.logo {
+    width: 80px;
+    height: 80px;
+    padding: auto;
+}
+
+header {
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.507) 0%, rgba(161, 161, 161, 0.712) 100%), url(/img/colegio-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+#navegador {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.titulo-head {
+    color: rgb(245, 240, 240);
+    font-family: 'Pacifico', cursive;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    /* bordes */
+}
+
+.titulo-head1 {
+    color: rgba(132, 224, 89, 0.774);
+    -webkit-text-stroke: 1px rgba(145, 202, 118, 0.26);
+}
+
+.titulo-head2 {
+    color: rgba(255, 0, 0, 0.473);
+    -webkit-text-stroke: 1px rgba(175, 13, 13, 0.26);
+}
+
+.titulo-head3 {
+    color: rgba(37, 151, 226, 0.747);
+    -webkit-text-stroke: 1px rgba(20, 132, 184, 0.26);
+}
+
+.subtitulo-header {
+    font-family: 'Pacifico', cursive;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.subtitulo-header1 {
+    color: rgba(37, 151, 226, 0.747);
+    -webkit-text-stroke: 1px rgba(20, 132, 184, 0.26);
+}
+
+.subtitulo-header2 {
+    color: rgba(196, 193, 36, 0.849);
+    -webkit-text-stroke: 1px rgba(185, 226, 37, 0.26);
+}
+
+.subtitulo-header3 {
+    color: rgba(255, 0, 0, 0.473);
+    -webkit-text-stroke: 1px rgba(175, 13, 13, 0.26);
+}
+
+.contenedor-comunidad {
+    margin-top: 30px;
+}
+
+.subtitulo-comunidad {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.parrafo-comunidad {
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+}
+
+
+/* ******************************** */
+
+
+/* Info Comunidad */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 0rem;
+    }
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.imagenMision {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #999;
+}
+
+.imagenVision {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #999;
+}
+
+.imagenHistoria {
+    width: 400px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #999;
+}
+
+
+/* ******************************** */
+
+
+/* Boton Whatsapp */
+
+.whatsapp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 30px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 35px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+    font-size: 50px;
+}
