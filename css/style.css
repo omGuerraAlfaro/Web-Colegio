@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* font-family: 'Pacifico',cursive;
 font-family: 'Roboto', sans-serif; 
 font-family: 'Roboto Condensed', sans-serif;
@@ -184,3 +185,99 @@ header {
 
 
 /* ******************************** */
+
+=======
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+header {
+    font-family: 'Roboto', sans-serif;
+    height: 60vh;
+    background-image: linear-gradient(to right, rgba(168, 202, 186, 0.507) 0%, rgba(87, 76, 84, 0.712) 100%), url(/img/colegio-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+}
+
+#navegador {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0%;
+}
+
+.titulo {
+    color: rgb(245, 240, 240);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    /* bordes */
+}
+
+.subtitulo-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+    text-align: center;
+    margin-top: 0px;
+    -webkit-text-stroke: 1px rgb(148, 13, 13);
+}
+
+.contenedor-comunidad {
+    margin-top: 30px;
+}
+
+.subtitulo-comunidad {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.parrafo-comunidad {
+    font-family: 'Quicksand', sans-serif;
+    text-align: justify;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+
+/* rtl:begin:ignore */
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+>>>>>>>9c3429e286541c196df5a54c03dafe2c16047b49
