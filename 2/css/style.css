@@ -1,23 +1,18 @@
-.logo {
-    width: 80px;
-    height: 80px;
-    padding: auto;
-}
-
-header {
-    height: 60vh;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.507) 0%, rgba(161, 161, 161, 0.712) 100%), url(/img/colegio-header.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
-}
-
 #navegador {
     position: fixed;
     width: 100%;
     margin-top: 0;
     padding-top: 0;
+}
+
+.carrusel {
+    position: relative;
+    z-index: -1;
+}
+
+.carrusel1 {
+    position: static;
+    z-index: -1;
 }
 
 .titulo-head {
