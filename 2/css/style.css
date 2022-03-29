@@ -1,12 +1,22 @@
-#navegador {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+header {
     position: fixed;
     width: 100%;
-    margin-top: 0;
-    padding-top: 0;
     box-shadow: 5px 2px 10px #999;
+    padding-top: auto;
 }
 
 .carrusel1 {
+    margin-top: 65px;
     position: static;
     z-index: -1;
 }
