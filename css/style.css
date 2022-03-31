@@ -7,6 +7,10 @@ body {
     background: #f1fbff;
 }
 
+.titulog {
+    font-size: 50px;
+}
+
 .whatsapp {
     position: fixed;
     width: 70px;
