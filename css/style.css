@@ -18,6 +18,14 @@ body {
     background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
 }
 
+.h2Portal {
+    font-size: 60px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+}
+
 .h2Comunidad2 {
     font-size: 45px;
     -webkit-background-clip: text;
@@ -48,6 +56,14 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+.h2Sesion {
+    font-size: 45px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 .navbar {

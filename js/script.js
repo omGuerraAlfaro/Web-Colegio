@@ -15,3 +15,19 @@
         });
     }, false);
 })();
+
+$(document).ready(function() {
+    $("#btnLogin").click(function() {
+        var Usuario = $("#rutLogin").val();
+        var Contraseña = $("#ContrasenaLogin").val();
+        var res;
+        if (Usuario == "200822110" && Contraseña == "pass") {
+            res = "Inicio de sesion valido"
+        } else {
+
+            res = "Usuario/Contraseña incorrecto"
+        }
+        alert(res)
+    });
+
+});
