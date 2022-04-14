@@ -67,7 +67,11 @@
                                     <input type="password" class="form-control" id="ContrasenaLogin" placeholder="Ingrese Su Contraseña" required>
                                 </div>
                             </div>
+                            <span id="resultadoLoginBien" class="Span-correcto text-center m-auto" ></span>
+                            <span id="resultadoLoginMal" class="Span-incorrecto text-center m-auto" ></span>
                             <button style="background-color: tomato;" class="btn btn-warning btn-lg btn-block mt-3 col-lg-7 m-auto" type="button" id="btnLogin">Iniciar Sesión</button>
+                           
+
                         </div>
                     </form>
                 </div>
@@ -78,8 +82,8 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="validationNombre">Nombre Usuario</label>
-                                    <input type="text" class="form-control" id="validationNombre" placeholder="Ingrese Nombre Usuario" required>
+                                    <label for="validationRut">Rut</label>
+                                    <input type="text" class="form-control" id="validationRut" placeholder="Ingrese Rut" required>
                                     <div class="valid-feedback">
                                         ok!
                                     </div>
@@ -90,14 +94,22 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="validationRut">Contraseña</label>
-                                    <input type="text" class="form-control" id="validationRut" placeholder="Ingrese Contraseña" required>
+                                    <label for="validationPass">Contraseña</label>
+                                    <input type="text" class="form-control" id="validationPass" placeholder="Ingrese Contraseña" required>
                                     <div class="valid-feedback">
                                         ok!
                                     </div>
                                     <div class="invalid-feedback">
                                         Por favor, Ingrese Contraseña
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="validationPass2">Reingrese Contraseña</label>
+                                    <input type="text" class="form-control" id="validationPass2" placeholder="Reingrese Contraseña" required>
+                                    <span id="valPass" class="Span-correcto"></span>
+                                    <span id="valPass2" class="Span-incorrecto"></span>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -112,7 +124,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <button style="background-color: tomato;" class="btn btn-warning btn-lg btn-block mt-3 col-lg-7 m-auto" type="submit">Registrar</button>
+                            <button style="background-color: tomato;" class="btn btn-warning btn-lg btn-block mt-3 col-lg-7 m-auto" type="submit" id="ValidarPass">Registrar</button>
                         </div>
                     </form>
                 </div>

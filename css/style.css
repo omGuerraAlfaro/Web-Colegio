@@ -9,7 +9,12 @@ body {
 
 
 /* Titulos */
-
+.Span-correcto{
+    color: #2ECC71;
+}
+.Span-incorrecto{
+    color: tomato;
+}
 .h2Comunidad {
     font-size: 45px;
     -webkit-background-clip: text;
