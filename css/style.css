@@ -59,6 +59,13 @@ body {
 
 /* IMAGENES */
 
+.imagenComunidad {
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px #999;
+    margin-top: 15px;
+}
+
 .imagenMision {
     width: 400px;
     border-radius: 50%;
@@ -75,7 +82,7 @@ body {
 }
 
 .imagenHistoria {
-    width: 400px;
+    width: 100px;
     border-radius: 50%;
     box-shadow: 2px 2px 10px #999;
     margin-bottom: 15px;
@@ -88,8 +95,8 @@ body {
     position: fixed;
     width: 70px;
     height: 70px;
-    bottom: 30px;
-    right: 40px;
+    bottom: 50px;
+    right: 20px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 80px;
@@ -101,6 +108,7 @@ body {
 .whatsapp-icon {
     margin-top: 10px;
     font-size: 50px;
+    color: #f1fbff;
 }
 
 .section-padding {
@@ -167,7 +175,7 @@ body {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .carousel-caption {
-        bottom: 370px;
+        bottom: 37px;
     }
     .carousel-caption p {
         width: 100%;
