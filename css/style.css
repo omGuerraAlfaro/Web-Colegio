@@ -7,14 +7,41 @@ body {
     background: #f1fbff;
 }
 
+.section-padding {
+    padding: 100px 0;
+}
 
-/* Titulos */
-.Span-correcto{
+
+/* span validaciones */
+
+.Span-correcto {
     color: #2ECC71;
 }
-.Span-incorrecto{
+
+.Span-incorrecto {
     color: tomato;
 }
+
+
+/* cards */
+
+.card {
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #999;
+    column-gap: 15px;
+}
+
+.cardImg {
+    border-radius: 15px;
+}
+
+.contCard {
+    margin-bottom: 10px;
+}
+
+
+/* Titulos */
+
 .h2Comunidad {
     font-size: 45px;
     -webkit-background-clip: text;
@@ -78,6 +105,9 @@ body {
 }
 
 
+/* *************** */
+
+
 /* IMAGENES */
 
 .imagenComunidad {
@@ -110,7 +140,10 @@ body {
 }
 
 
-/* ********* */
+/* *************** */
+
+
+/* Boton Whatsap*/
 
 .whatsapp {
     position: fixed;
@@ -132,14 +165,24 @@ body {
     color: #f1fbff;
 }
 
-.section-padding {
-    padding: 100px 0;
+
+/* *************** */
+
+
+/* responsividad carrusel y imagen */
+
+.w-100 {
+    /* imagenes carrusel */
+    height: 100vh;
 }
 
 .carousel-item {
     height: 100vh;
     min-height: 300px;
 }
+
+
+/* *********** */
 
 .carousel-caption {
     bottom: 220px;
@@ -190,48 +233,174 @@ body {
     letter-spacing: 2px;
 }
 
-.w-100 {
-    height: 100vh;
+
+/* responsividad whatsapp */
+
+@media only screen and (min-width: 320px) {
+    .whatsapp {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        bottom: 50px;
+        right: 20px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 80px;
+        text-align: center;
+        font-size: 35px;
+        z-index: 1;
+    }
+    .whatsapp-icon {
+        margin-top: 5px;
+        font-size: 40px;
+        color: #f1fbff;
+    }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/* ************** */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Styles Carrusel */
+    .w-100 {
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-item {
+        height: 35vh;
+        min-height: 300px;
+    }
+    .carousel-caption {
+        bottom: 37px;
+    }
+    .carousel-caption h5 {
+        bottom: 37px;
+        font-size: 20px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles Carrusel */
+    .w-100 {
+        /* imagenes carrusel */
+        height: 100%;
+        width: 100%;
+    }
+    .carousel-item {
+        height: 50vh;
+        min-height: 300px;
+    }
     .carousel-caption {
         bottom: 37px;
     }
     .carousel-caption p {
         width: 100%;
-    }
-    .card {
-        margin-bottom: 30px;
-    }
-    .img-area img {
-        width: 100%;
+        font-size: 10px;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .navbar-nav {
-        text-align: center;
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles CArrusel*/
+    .w-100 {
+        /* imagenes carrusel */
+        height: 50vh;
+    }
+    .carousel-item {
+        height: 50vh;
+        min-height: 300px;
     }
     .carousel-caption {
-        bottom: 125px;
-    }
-    .carousel-caption h5 {
-        font-size: 17px;
-    }
-    .carousel-caption a {
-        padding: 10px 15px;
-        font-size: 15px;
+        bottom: 37px;
     }
     .carousel-caption p {
         width: 100%;
-        line-height: 1.6;
-        font-size: 12px;
+        font-size: 10px;
     }
-    .about-text {
-        padding-top: 50px;
+    .carousel-caption h5 {
+        font-size: 50px;
     }
-    .card {
-        margin-bottom: 30px;
-    }
+}
+
+
+/* cards talleres  FALTA RESPONSIVIDAD*/
+
+.profile-card-6 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-6 img {
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview h3 {
+    font-weight: bold;
+}
+
+.profile-card-6 .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-6:hover img {
+    filter: brightness(80%);
+}
+
+.profile-card-6:hover .profile-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.profile-card-6:hover .profile-position {
+    left: 40px;
+}
+
+.profile-card-6:hover .profile-overview {
+    padding-bottom: 25px;
 }
