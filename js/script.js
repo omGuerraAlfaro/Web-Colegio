@@ -1,3 +1,4 @@
+/* validacion form */
 (function() {
     'use strict';
     window.addEventListener('load', function() {
@@ -17,9 +18,8 @@
 })();
 
 function validarRegistro() {
-
     var password = document.getElementById("validationPass").value;
-    var password2 = document.getElementById("validationPass2").value; 
+    var password2 = document.getElementById("validationPass2").value;
     if (password2 != password) {
         document.getElementById("resValPass2").innerHTML = "Las contraseñas deben ser iguales";
     }
@@ -32,14 +32,14 @@ $(document).ready(function() {
         var res;
         if (Usuario == "200822110" && Contraseña == "pass") {
             res = "Inicio de sesion valido"
-            $("#resultadoLoginBien").html(res); 
-            $("#resultadoLoginMal").html("");  
+            $("#resultadoLoginBien").html(res);
+            $("#resultadoLoginMal").html("");
         } else {
 
             res = "Usuario/Contraseña incorrecto"
             $("#resultadoLoginMal").html(res);
-            $("#resultadoLoginBien").html("");   
-        }    
+            $("#resultadoLoginBien").html("");
+        }
     });
 
     $("#ValidarPass").click(function() {
@@ -55,8 +55,6 @@ $(document).ready(function() {
             $("#valPass2").html(res);
             $("#valPass").html("");
         }
-        
-
     });
 
 });
