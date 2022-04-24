@@ -34,7 +34,6 @@
                         </svg>Inicio
                     </a>
                 </li>
-                <hr>
                 <li class="nav-item align-items-center text-center">
                     <a href="#Comunidad" class="nav-link text-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
@@ -43,7 +42,6 @@
                         </svg>Nuestra Comunidad
                     </a>
                 </li>
-                <hr>
                 <li class="nav-item align-items-center text-center">
                     <a href="#Talleres" class="nav-link text-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
@@ -52,7 +50,6 @@
                         </svg>Talleres
                     </a>
                 </li>
-                <hr>
                 <li class="nav-item align-items-center text-center">
                     <a href="#Contacto" class="nav-link text-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
@@ -61,7 +58,6 @@
                         </svg>Formulario de Contacto
                     </a>
                 </li>
-                <hr>
                 <li class="nav-item align-items-center text-center px-5">
                     <a href="login.html" class="nav-link text-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
@@ -89,7 +85,10 @@
                     <div class="carousel-caption">
                         <h5>Consigue Matrícula</h5>
                         <p></p>
-                        <a href="#Contacto"><button class="buttonCarrusel"><span>Haz Clic Aquí</span></button></a>
+                        <form action="#Contacto">
+                            <button class="buttonCarrusel"><span>Haz Clic Aquí</span></button>
+                        </form>
+                        
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -97,15 +96,21 @@
                     <div class="carousel-caption ">
                         <h5>Nuestros Talleres</h5>
                         <p></p>
-                        <a href="#Talleres"><button class="buttonCarrusel"><span>Haz Click Aquí</span></button></a>
+                        <form action="#Talleres">'
+                            <button class="buttonCarrusel"><span>Haz Click Aquí</span></button>
+                        </form>
+                    
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/carrusel3.jpeg" class="bi d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <h5>Intranet</h5>
-                        <p></p>
-                        <a href="login.html"><button class="buttonCarrusel"><span>Ingresar Aquí</span></button></a>
+                        <p></p> 
+                        <form action="login.html">
+                            <button class="buttonCarrusel"><span>Ingresar Aquí</span></button>
+                        </form>
+                       
                     </div>
                 </div>
             </div>
@@ -179,11 +184,11 @@
     <!-- Fin info colegio -->
 
     <!-- Talleres Comienzo  -->
-    <section id="Talleres">
+    <div id="Talleres">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-4">
-                    <div class="profile-card-6"><img src="img/basket2.jpg" class="img img-responsive">
+                    <div class="profile-card-6"><img src="img/basket2.jpg" class="img img-responsive" alt="Taller de basketball">
                         <div class="profile-name">Taller
                             <br>Basketball mixto</div>
                         <div class="profile-position"></div>
@@ -195,7 +200,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
-                    <div class="profile-card-6"><img src="img/11111.jpeg" class="img img-responsive">
+                    <div class="profile-card-6"><img src="img/11111.jpeg" class="img img-responsive" alt="Taller de ajedrez">
                         <div class="profile-name">Taller
                             <br>Ajedrez</div>
                         <div class="profile-position"></div>
@@ -207,7 +212,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-4">
-                    <div class="profile-card-6"><img src="img/manual.jpg" class="img img-responsive">
+                    <div class="profile-card-6"><img src="img/manual.jpg" class="img img-responsive" alt="Taller de manualidades">
                         <div class="profile-name">Taller
                             <br>Manualidades</div>
                         <div class="profile-position"></div>
@@ -220,7 +225,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Talleres Final -->
 
 
@@ -264,7 +269,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="validationCurso">Seleccione el nivel de enseñanza</label>
+                                    <label id="validationCurso">Seleccione el nivel de enseñanza</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Seleccione el nivel de enseñanza</option>
                                         <option value="1">Jardin</option>
@@ -299,7 +304,7 @@
                             </div>
                             <div class="col-md-12 ">
                                 <div class="mb-3 ">
-                                    <label for="validationMas" id="validationMas">Comentarios adicionales</label>
+                                    <label  id="validationMas">Comentarios adicionales</label>
                                     <textarea class="form-control" placeholder="Comentarios adicionales" rows="3"></textarea>
                                 </div>
                             </div>
@@ -323,16 +328,16 @@
 
     <!-- API JSON -->
     <div class="main-container container align-items-center m-auto">
-        <form action="" class="needs-validation text-center  " novalidate>
+        <form action="#Clima" id ="#Clima" class="needs-validation text-center  " novalidate>
             <div class="col-12">
-                <input type="text" for="validationBusqueda" class="form-control formu text-center align-items-center m-auto" id="validationBusqueda" placeholder="Ciudad, Pais" required>
+                <input type="text" class="form-control formu text-center align-items-center m-auto" id="buscarDireccion" placeholder="Ciudad, Pais" required>
                 <div class="valid-feedback section-padding1">
                     ok!
                 </div>
                 <div class="invalid-feedback section-padding1">
                     Por favor, Ingrese un direccion valida!
                 </div>
-                <button class="btn buttonApi" onclick="validarRegistro()"><span>Buscar</span></button>
+                <button class="btn buttonApi" onclick="actualizarClima()"><span>Buscar</span></button>
             </div>
             <div class="col-12">
 
@@ -341,16 +346,17 @@
         <br>
         <div id="contenedor">
             <div class="text-center" id="caja1">
-                <h1 id="temperaturaValor"></h1>
-                <h1 id="temperaturaDescripcion"></h1>
+                <span id="temperaturaValor"></span>
+                <span id="temperaturaDescripcion"></span>
             </div>
             <div class="py-1" id="caja2">
-                <h2 id="ubicacion"></h2>
-                <img id="icono-animado" src="" alt="" height="128" width="128" />
+                <span id="ubicacion"></span>
+                <img id="icono-animado" src="animated/day.svg" alt="Icono clima" height="128" width="128" />
+                
             </div>
             <div class="text-center" id="caja3">
                 <h3>Veloc. del Viento</h3>
-                <h1 id="vientoVelocidad"></h1>
+                <span id="vientoVelocidad"></span>
             </div>
         </div>
     </div>
