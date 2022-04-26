@@ -25,7 +25,7 @@
             <hr>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 bg-light">
                 <li class="nav-item align-items-center text-center">
-                    <a href="#" class="nav-link text-dark" >
+                    <a href="#" class="nav-link text-dark">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi d-block mx-auto mb-1" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L8 2.207l6.646 6.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
@@ -88,7 +88,7 @@
                         <form action="#Contacto">
                             <button class="buttonCarrusel"><span>Haz Clic Aquí</span></button>
                         </form>
-                        
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -99,18 +99,18 @@
                         <form action="#Talleres">'
                             <button class="buttonCarrusel"><span>Haz Click Aquí</span></button>
                         </form>
-                    
+
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="img/carrusel3.jpeg" class="bi d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <h5>Intranet</h5>
-                        <p></p> 
+                        <p></p>
                         <form action="login.html">
                             <button class="buttonCarrusel"><span>Ingresar Aquí</span></button>
                         </form>
-                       
+
                     </div>
                 </div>
             </div>
@@ -304,7 +304,7 @@
                             </div>
                             <div class="col-md-12 ">
                                 <div class="mb-3 ">
-                                    <label  id="validationMas">Comentarios adicionales</label>
+                                    <label id="validationMas">Comentarios adicionales</label>
                                     <textarea class="form-control" placeholder="Comentarios adicionales" rows="3"></textarea>
                                 </div>
                             </div>
@@ -322,8 +322,8 @@
 
 
     <!-- API JSON -->
-    <div class="main-container container align-items-center m-auto">
-        <form action="#Clima" id ="#Clima" class="needs-validation text-center  " novalidate>
+    <div class="main-container col-md-12 col-lg-7 p-0 pt-4 pb-4 m-auto">
+        <form action="#Clima" id="#Clima" class="needs-validation text-center  " novalidate>
             <div class="col-12">
                 <input type="text" class="form-control formu text-center align-items-center m-auto" id="buscarDireccion" placeholder="Ciudad, Pais" required>
                 <div class="valid-feedback section-padding1">
@@ -333,9 +333,6 @@
                     Por favor, Ingrese un direccion valida!
                 </div>
                 <button class="btn buttonApi" onclick="actualizarClima()"><span>Buscar</span></button>
-            </div>
-            <div class="col-12">
-
             </div>
         </form>
         <br>
@@ -347,10 +344,10 @@
             <div class="py-1" id="caja2">
                 <span id="ubicacion"></span>
                 <img id="icono-animado" src="animated/day.svg" alt="Icono clima" height="128" width="128" />
-                
+
             </div>
             <div class="text-center" id="caja3">
-                <h3>Veloc. del Viento</h3>
+                <h5>Veloc. del Viento</h5>
                 <span id="vientoVelocidad"></span>
             </div>
         </div>
