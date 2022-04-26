@@ -17,6 +17,7 @@
     }, false);
 })();
 
+
 function validarRegistro() {
     var password = document.getElementById("validationPass").value;
     var password2 = document.getElementById("validationPass2").value;
@@ -24,6 +25,14 @@ function validarRegistro() {
         document.getElementById("resValPass2").innerHTML = "Las contraseñas deben ser iguales";
     }
 }
+
+function saltarA(id, tiempo) { //Funcion para ir a cualquier parte del sitio
+    var tiempo = tiempo || 10; //Tiempo que tarda en reflejar la accion en ms; por defecto son 10ms
+    console.log(tiempo)
+    $("html, body").animate({ scrollTop: $(id).offset().top }, tiempo); //Se mueve hasta el inicio del id
+
+  }
+
 
 $(document).ready(function() {
     $("#btnLogin").click(function() {
@@ -57,6 +66,6 @@ $(document).ready(function() {
         }
     });
 
-
+    
 });
 
