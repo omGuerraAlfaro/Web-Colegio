@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
     fetch(url)
         .then(response => { return response.json() })
         .then(data => {
+            console.log(data) //datos primera API "openweathermap"
             var ubi = data.name
             if (ubi == null) {
                 ubi = "No disponible por el momento"
@@ -102,18 +103,17 @@ function actualizarClima() {
                 //Se utiliza la latitud y longitud de la direccion ingresada para actualizar el clima
                 url2 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&lang=es&units=metric&appid=527af813823205f3a60509919a23380c`
 
-                console.log(url2)
 
                 fetch(url2)
                     .then(response => { return response.json() })
                     .then(data2 => {
+                        console.log(data2)
 
                         var ubi = data2.name
                         if (ubi == null) {
                             ubi = "No disponible por el momento"
                         }
                         ubicacion.textContent = data2.name
-                        console.log(data2)
                         temperaturaValor.textContent = Math.round(parseFloat(data2.main.temp)) + " °C"
                         let desc = data2.weather[0].description
                         temperaturaDescripcion.textContent = desc.toUpperCase()
